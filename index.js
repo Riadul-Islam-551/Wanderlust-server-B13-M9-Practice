@@ -57,7 +57,7 @@ async function run() {
       res.json(result);
     });
 
-    // update destination data
+    
     app.patch(`/destinations/:id`, async (req, res) => {
       const { id } = req.params;
       const updatedData = req.body;
